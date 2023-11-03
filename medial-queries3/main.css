@@ -1,3 +1,52 @@
+* {
+  outline: 1px solid red;
+}
 body {
   background: peachpuff;
+  color: white;
+  margin: 0;
+  font-size: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 1em;
+}
+
+.a {
+  background-color: coral;
+  height: 100%;
+  margin-bottom: 1em;
+}
+
+.b, .c, .d, .e, .f, .g {
+  background-color: cornflowerblue;
+height: 35%;
+width: 33%;
+align-content:space-around;
+justify-content: center;
+align-items: center;
+}
+
+.h {
+  background-color: darksalmon;
+height: 100%;
+}
+
+header {
+height: 20vh;
+}
+
+main {
+  height: 60vh;
+  display: flex;
+  flex-direction:row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+footer {
+  height: 25vh;
 }

@@ -1,3 +1,50 @@
+
 body {
-  background: blanchedalmond;
+  padding: 0 auto;
+  margin: 0;
+  text-align: center;
+  background-color: blanchedalmond;
+}
+
+.container {
+height: 100vh;
+display: flex;
+flex-direction: column;
+margin: 2em;
+}
+
+.A {
+background-color: lightseagreen;
+height: 20vh ;
+margin-bottom: 1em;
+}
+
+.B {
+background-color:darkviolet;
+height:60vh;
+margin-bottom: 1em;
+}
+
+.C {
+  background-color: darkgoldenrod;
+  height: 20vh;
+}
+
+
+@media(min-width: 600px){
+  
+  .b {
+
+    flex-direction: row;
+    width: 65vw;
+    flex-grow: 4;
+  }
+
+  .c {
+    
+    flex-direction: row;
+    height: 65vh;
+    flex-grow: 1;
+
+  }
 }

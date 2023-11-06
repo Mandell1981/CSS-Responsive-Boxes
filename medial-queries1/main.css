@@ -10,41 +10,55 @@ body {
 height: 100vh;
 display: flex;
 flex-direction: column;
-margin: 2em;
+/* margin: 1em; */
 }
 
 .A {
 background-color: lightseagreen;
-height: 20vh ;
-margin-bottom: 1em;
+height: 10vh ;
+margin: 1em;
 }
 
 .B {
 background-color:darkviolet;
 height:60vh;
-margin-bottom: 1em;
+margin: 1em;
 }
 
 .C {
   background-color: darkgoldenrod;
-  height: 20vh;
+  height: 10vh;
+  margin: 1em;
 }
 
 
 @media(min-width: 600px){
-  
-  .b {
 
+  .container {
     flex-direction: row;
-    width: 65vw;
-    flex-grow: 4;
+    flex-wrap: wrap;
+    margin: 1em;
   }
 
-  .c {
+  .A {
+    width: 100%;
+  }
+  
+  .B{
+
+    /* flex-direction: row; */
+    /* width: 65vw; */
+    flex-grow: 3;
+    height: 85vh;
+    margin-top: 1em;
+  }
+
+  .C {
     
-    flex-direction: row;
-    height: 65vh;
+    /* flex-direction: row; */
+    height: 85vh;
     flex-grow: 1;
+    margin-top: 1em;
 
   }
 }

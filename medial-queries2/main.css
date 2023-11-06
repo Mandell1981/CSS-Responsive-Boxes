@@ -1,12 +1,12 @@
 * {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 body {
   background: papayawhip;
-  color: white;
+  color: black;
 }
 
-.container {
+.container  {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -17,7 +17,61 @@ body {
   height: 10%;
   
 }
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  height: 70vh;
+}
 
+.b {
+  background-color:aquamarine;
+  width: 100vw;
+  height: 40vh;
+
+}
+.c, .d, .e {
+  background-color: purple;
+  width: 30vw;
+  height: 20vh;
+  margin-top: 1em;
+}
+
+@media(min-width: 600px){
+  .container {
+    flex-direction:row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
+  .main {
+    /* justify-content: stretch; */
+    height: 75vh;
+    /* margin: 1em; */
+    width: 70vw;
+  }
+  /* .b {
+    width: 70vw;
+    height: 30vh;
+  } */
+  .c, .d, .e {
+    background-color: blue;
+    width: 20vw;
+    height: 30vh;
+    /* margin: 1em; */
+  }
+  .f {
+    flex-grow: 4;
+    height: 75vh;
+    margin-left: 1em;
+
+  }
+}
+
+
+/* 
 .b {
   background-color: darkgrey;
   height: 65%;
@@ -38,13 +92,13 @@ body {
   margin-bottom: 1em;
   width: 30%;
 
-}
+} */
 
 
 
 
-
-@media(min-width: 600px) {
+/*  */
+/* @media(min-width: 600px) {
 
   .a {
     height: 30%;
@@ -55,4 +109,4 @@ body {
   } 
 
   
-}
+} */

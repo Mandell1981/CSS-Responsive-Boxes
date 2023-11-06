@@ -1,10 +1,10 @@
 * {
-  outline: 1px solid red;
+  outline: 2px solid black;
 }
 body {
   background: peachpuff;
   color: white;
-  margin: 0;
+  margin: 0 auto;
   font-size: 2em;
 }
 
@@ -17,36 +17,54 @@ body {
 
 .a {
   background-color: coral;
-  height: 100%;
-  margin-bottom: 1em;
+  height: 10vh;
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  height: 40vh;
+  width: 100%;
+  margin: 0em;
+}
+
+
+
 .b, .c, .d, .e, .f, .g {
-  background-color: cornflowerblue;
-height: 35%;
-width: 33%;
-align-content:space-around;
-justify-content: center;
-align-items: center;
+  background-color: red;
+  width: 30vw;
+  height: 30%;
+  margin: 0em auto;
 }
 
 .h {
-  background-color: darksalmon;
-height: 100%;
+  background-color:darkmagenta;
+  height: 50vh;
+
+}
+@media(mini-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .a {
+    flex-grow: 1;
+    height: 35vh;
+    width: 100%;
+  }
+  
+  .main {
+    width: 70vw;
+    height: 75vh;
+  }
+  .h {
+    flex-grow: 4;
+    height: 75vh;
+    margin-left: 1em;
+  }
 }
 
-header {
-height: 20vh;
-}
-
-main {
-  height: 60vh;
-  display: flex;
-  flex-direction:row;
-  flex-grow: 1;
-  flex-wrap: wrap;
-}
-
-footer {
-  height: 25vh;
-}
